@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% load static %}
+
+{% block body %}
+    {% include 'navbar.html' %}
+
+    <div id="page1">
+        <img src="{% static 'images/SceneBg.png' %}" width="100%" height="100%">
+        <p><i>A Game Engine to <span style="color: #ffcf53;">revolutionise</span> the graphics industry...</i></p>
+    </div>
+
+
+    <div id="page2">
+        <img src="{% static 'images/Monterey.png' %}" width="100%" height="100%">
+        <img src="{% static 'images/EngineSS.png' %}" width="90%" height="90%">
+        <p><i>Meet the <span style="color: #ffcf53; font-family: 'Imperial Script'; font-size: 4rem;">Flameberry
+                    Engine</span></i></p>
+    </div>
+
+    <div id="page3">
+        <div id="page3-image">
+            <img src="{% static 'images/AngledWavesWallpaper.png' %}" id="page3-background">
+            <img src="{% static 'images/EngineSS.png' %}" id="page3-foreground">
+        </div>
+        <div id="page3-content">
+            <div class="content-box">
+                <img src="{% static 'images/VulkanLogo.png' %}" alt="Vulkan">
+                <p>
+                    Flameberry uses the Vulkan API which is the modern standard for cross platform graphical
+                    applications. It provides low level control over GPU resources and memory management
+                </p>
+            </div>
+            <div class="content-box">
+                <img src="{% static 'images/NvidiaLogo.png' %}" alt="PhysX">
+                <p>
+                    Powered by Nvidia PhysX allowing real time high quality physics simulation performed on parallel
+                    threads
+                </p>
+            </div>
+            <div class="content-box">
+                <svg width="44" height="58" viewBox="0 0 48 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.1152 5.40078C39.8263 3.74179 39.296 1.80429 37.8375 0.738669C36.379 -0.326956 34.3902 -0.230081 33.0281 0.956638L2.17098 28.0816C0.965621 29.1473 0.531692 30.8547 1.09821 32.3562C1.66473 33.8578 3.11116 34.875 4.71428 34.875H18.154L8.88482 56.5992C8.17366 58.2582 8.70401 60.1957 10.1625 61.2613C11.621 62.3269 13.6098 62.2301 14.9719 61.0434L45.829 33.9184C47.0344 32.8527 47.4683 31.1453 46.9018 29.6437C46.3353 28.1422 44.9009 27.1371 43.2857 27.1371H29.846L39.1152 5.40078Z"
+                        fill="white" />
+                </svg>
+                <p>
+                    Immediate Mode UI supports realtime, efficient and responsive user interface elements
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4">
+        <div id="page4-content">
+            <div class="content-box">
+                <svg width="25%" height="25%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M27.6947 22.9999C27.883 22.6617 28 22.2807 28 21.9385V10.0613C28 9.71913 27.8831 9.33818 27.6947 9L16 16L27.6947 22.9999Z"
+                        fill="#7F3A86" />
+                    <path
+                        d="M17.0395 29.7433L26.9611 23.8047C27.2469 23.6336 27.5067 23.3382 27.695 23L16.0003 16L4.30566 23C4.49398 23.3382 4.75382 23.6337 5.03955 23.8047L14.9611 29.7433C15.5326 30.0855 16.468 30.0855 17.0395 29.7433Z"
+                        fill="#662579" />
+                    <path
+                        d="M27.6947 8.99996C27.5064 8.6617 27.2465 8.36629 26.9608 8.19521L17.0392 2.25662C16.4677 1.91446 15.5323 1.91446 14.9608 2.25662L5.03922 8.19521C4.46761 8.53729 4 9.37709 4 10.0613V21.9386C4 22.2807 4.11694 22.6618 4.30533 23L16 16L27.6947 8.99996Z"
+                        fill="#9A5196" />
+                    <path
+                        d="M16.0385 24C11.6061 24 8 20.4112 8 16C8 11.5888 11.6061 8 16.0385 8C18.8458 8 21.4674 9.47569 22.919 11.8618L19.4765 13.9265C18.7492 12.736 17.4399 12 16.0385 12C13.8222 12 12.0193 13.7944 12.0193 16C12.0193 18.2056 13.8222 20 16.0385 20C17.4362 20 18.7421 19.2681 19.4707 18.0832L22.9205 20.1359C21.4692 22.5234 18.8467 24 16.0385 24Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.0001 13V13.9974H22.9999V13H22.0001V13.9974H21V15H22.0001V16.9948H21V18H22.0001V19H22.9999L23 18H25.0001V19H25.9999V18H27V17H25.9999V15H27V13.9974H25.9999V13H25.0001ZM25.0001 17V15H22.9999V16.9948L25.0001 17Z"
+                        fill="white" />
+                </svg>
+                <p>
+                    CSharp scripting enables writing of scripts for the game entities in an easy, fast and familiar way.
+                    It provides ease of
+                    accessibility, flexibility, and platform independence
+                </p>
+            </div>
+            <div class="content-box">
+                <svg width="25%" height="25%" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+                        fill="white" />
+                </svg>
+                <p>
+                    GPU accelerated Ray Tracing support is coming soon enabling extremely realistic scene rendering and
+                    natural lighting
+                    effects
+                </p>
+            </div>
+            <div class="content-box">
+                <svg width="25%" height="25%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.18109 10.1811C9.2342 10.128 9.32905 10.0623 9.63166 10.0216C9.95434 9.97823 10.3923 9.97675 11.0698 9.97675H12.9302C13.6077 9.97675 14.0457 9.97823 14.3683 10.0216C14.671 10.0623 14.7658 10.128 14.8189 10.1811C14.872 10.2342 14.9377 10.329 14.9784 10.6317C15.0218 10.9543 15.0233 11.3923 15.0233 12.0698V13.9302C15.0233 14.6077 15.0218 15.0457 14.9784 15.3683C14.9377 15.671 14.872 15.7658 14.8189 15.8189C14.7658 15.872 14.671 15.9377 14.3683 15.9784C14.0457 16.0218 13.6077 16.0233 12.9302 16.0233H11.0698C10.3923 16.0233 9.95434 16.0218 9.63166 15.9784C9.32905 15.9377 9.2342 15.872 9.18109 15.8189C9.12798 15.7658 9.0623 15.671 9.02161 15.3683C8.97823 15.0457 8.97675 14.6077 8.97675 13.9302V12.0698C8.97675 11.3923 8.97823 10.9543 9.02161 10.6317C9.0623 10.329 9.12798 10.2342 9.18109 10.1811Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 3C12.3853 3 12.6977 3.31236 12.6977 3.69767V6.48884C13.2084 6.48991 13.6717 6.49342 14.0932 6.50495L14.093 6.48837V3.69767C14.093 3.31236 14.4054 3 14.7907 3C15.176 3 15.4884 3.31236 15.4884 3.69767V6.48837C15.4884 6.52487 15.4856 6.56072 15.4802 6.5957C16.4162 6.71067 17.0648 6.94879 17.558 7.44198C18.0512 7.93517 18.2893 8.58381 18.4043 9.51984C18.4393 9.51443 18.4751 9.51163 18.5116 9.51163H21.3023C21.6876 9.51163 22 9.82399 22 10.2093C22 10.5946 21.6876 10.907 21.3023 10.907H18.5116L18.495 10.9068C18.5066 11.3283 18.5106 11.7916 18.5116 12.3023H21.3023C21.6876 12.3023 22 12.6147 22 13C22 13.3853 21.6876 13.6977 21.3023 13.6977L18.5112 13.6977C18.5101 14.2084 18.5066 14.6717 18.495 15.0932L18.5116 15.093H21.3023C21.6876 15.093 22 15.4054 22 15.7907C22 16.176 21.6876 16.4884 21.3023 16.4884H18.5116C18.4751 16.4884 18.4393 16.4856 18.4043 16.4802C18.2893 17.4162 18.0512 18.0648 17.558 18.558C17.0648 19.0512 16.4162 19.2893 15.4802 19.4043C15.4856 19.4393 15.4884 19.4751 15.4884 19.5116V22.3023C15.4884 22.6876 15.176 23 14.7907 23C14.4054 23 14.093 22.6876 14.093 22.3023V19.5116L14.0932 19.495C13.6717 19.5066 13.2084 19.5106 12.6977 19.5116V22.3023C12.6977 22.6876 12.3853 23 12 23C11.6147 23 11.3023 22.6876 11.3023 22.3023L11.3023 19.5112C10.7916 19.5101 10.3283 19.5066 9.90678 19.495L9.90698 19.5116V22.3023C9.90698 22.6876 9.59462 23 9.2093 23C8.82399 23 8.51163 22.6876 8.51163 22.3023V19.5116C8.51163 19.4751 8.51443 19.4393 8.51984 19.4043C7.58381 19.2893 6.93517 19.0512 6.44198 18.558C5.94879 18.0648 5.71067 17.4162 5.5957 16.4802C5.56071 16.4856 5.52487 16.4884 5.48837 16.4884H2.69767C2.31236 16.4884 2 16.176 2 15.7907C2 15.4054 2.31236 15.093 2.69767 15.093H5.48837L5.50495 15.0932C5.49342 14.6717 5.48944 14.2084 5.48837 13.6977H2.69767C2.31236 13.6977 2 13.3853 2 13C2 12.6147 2.31236 12.3023 2.69767 12.3023L5.48884 12.3023C5.48991 11.7916 5.49342 11.3283 5.50495 10.9068L5.48837 10.907H2.69767C2.31236 10.907 2 10.5946 2 10.2093C2 9.82399 2.31236 9.51163 2.69767 9.51163H5.48837C5.52487 9.51163 5.56071 9.51443 5.5957 9.51984C5.71067 8.58381 5.94879 7.93517 6.44198 7.44198C6.93517 6.94879 7.58381 6.71067 8.51984 6.5957C8.51443 6.56072 8.51163 6.52487 8.51163 6.48837V3.69767C8.51163 3.31236 8.82399 3 9.2093 3C9.59462 3 9.90698 3.31236 9.90698 3.69767V6.48837L9.90678 6.50495C10.3283 6.49342 10.7916 6.48944 11.3023 6.48837V3.69767C11.3023 3.31236 11.6147 3 12 3ZM11.0238 8.5814C10.4054 8.58136 9.87247 8.58133 9.44573 8.63871C8.98839 8.70019 8.55001 8.83885 8.19443 9.19443C7.83885 9.55001 7.70019 9.98839 7.63871 10.4457C7.58133 10.8725 7.58136 11.4054 7.5814 12.0238V13.9762C7.58136 14.5946 7.58133 15.1275 7.63871 15.5543C7.70019 16.0116 7.83885 16.45 8.19443 16.8056C8.55001 17.1612 8.98839 17.2998 9.44573 17.3613C9.87247 17.4187 10.4054 17.4186 11.0238 17.4186H12.9762C13.5946 17.4186 14.1275 17.4187 14.5543 17.3613C15.0116 17.2998 15.45 17.1612 15.8056 16.8056C16.1612 16.45 16.2998 16.0116 16.3613 15.5543C16.4187 15.1275 16.4186 14.5946 16.4186 13.9762V12.0238C16.4186 11.4054 16.4187 10.8725 16.3613 10.4457C16.2998 9.98839 16.1612 9.55001 15.8056 9.19443C15.45 8.83885 15.0116 8.70019 14.5543 8.63871C14.1275 8.58133 13.5947 8.58136 12.9762 8.5814H11.0238Z"
+                        fill="white" />
+                </svg>
+                <p>
+                    Immediate Mode UI supports realtime, efficient and responsive user interface elements
+                </p>
+            </div>
+        </div>
+        <div id="page4-image">
+            <img src="{% static 'images/VenturaWallpaper.jpg' %}" id="page4-background">
+            <img src="{% static 'images/EngineSS_2.png' %}" id="page4-foreground">
+        </div>
+    </div>
+
+    <div id="page5">
+        <video id="page5-video" loop autoplay playsinline>
+                <source src="{% static 'videos/FlameberryDemo.mov' %}" type="video/quicktime">
+        </video>
+    </div>
+
+    <div id="page6">
+        <h1 id="title">Pricing</h1>
+        <div class="price-container">
+            <h1>Community Version</h1>
+            <div class="price-item">
+                <h2>Flameberry Engine | Free of Cost</h2>
+                <div>
+                    The Community Plan is perfect for solo developers and hobbyists who want to get started with our powerful game engine. With this plan, you'll have access to essential features that allow you to create and prototype your games. Join our vibrant community forums and share your creations with fellow developers. Get started today and turn your ideas into reality!
+                </div>
+                <a href="#"><div>Free Download</div></a>
+            </div>
+        </div>
+        <div class="price-container">
+            <h1>Professional Version</h1>
+            <div class="price-item">
+                <h2>Flameberry Engine | $9.99 / month</h2>
+                <div>
+                    The Professional Plan is designed for indie game developers and small studios looking to take their projects to the next level. Enjoy all the features of the Community Plan, plus advanced tools for optimizing performance and creating stunning visuals. Gain access to premium support, ensuring you're never stuck on a roadblock. Elevate your game development with the Professional Plan.
+                </div>
+                <a href="#"><div>Purchase</div></a>
+            </div>
+        </div>
+        <div class="price-container">
+            <h1>Enterprise Version</h1>
+            <div class="price-item">
+            <h2>Flameberry Engine | $19.99 / month</h2>
+            <div>The Enterprise Plan is tailored for large-scale game development studios and companies. Scale your operations with robust collaboration tools and enterprise-grade features. With priority support and dedicated account management, you'll have the resources you need to bring your ambitious projects to life. Maximize efficiency and unleash the full potential of our game engine with the Enterprise Plan.</div>
+            <a href="#"><div>Purchase</div></a>
+        </div>
+    </div>
+    </div>
+{% endblock body %}
