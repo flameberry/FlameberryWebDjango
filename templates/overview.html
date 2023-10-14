@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+<div id="overview-page1">
+    <div id="overview-page1-left">
+        <img src="{% static "images/SceneAndComponents.png" %}" id="overview-page1-image"></img>
+    </div>
+    <div id="overview-page1-content">
+        <div id="overview-page1-content-left">
+            <h1>Scene Hierarchy Panel</h1>
+            <p>The Scene Hierarchy Panel allows you to:</p>
+            <div class="overview-point">Create Entities</div>
+            <div class="overview-point">Delete Entities</div>
+            <div class="overview-point">Duplicate Entities</div>
+            <div class="overview-point">Rename Entities</div>
+            <div class="overview-point">Search Entities</div>
+            <div class="overview-point">Reorder Entities</div>
+            <div class="overview-point">Reparent Entities</div>
+            <div class="overview-point">Sort Entities by Type</div>
+        </div>
+        <div id="overview-page1-content-right">
+            <h1>Inspector Panel</h1>
+            <p>The Inspector Panel allows you to edit the following components:</p>
+            <div class="overview-point">Transform Component</div>
+            <div class="overview-point">Camera Component</div>
+            <div class="overview-point">Mesh Component</div>
+            <div class="overview-point">Light Component</div>
+            <div class="overview-point">Rigidbody Component</div>
+            <div class="overview-point">Box Collider Component</div>
+            <div class="overview-point">Sphere Collider Component</div>
+            <div class="overview-point">Capsule Collider Component</div>
+        </div>
+    </div>
+</div>
+
+<div id="overview-page2">
+    <div id="overview-page2-content">
+            <h1>Material Editor Panel</h1>
+            <p>The Material Editor Panel allows you to:</p>
+            <div class="overview-point">Edit Material Name</div>
+            <div class="overview-point">Apply Texture Map</div>
+            <div class="overview-point">Apply Normal Map</div>
+            <div class="overview-point">Apply Roughness Map</div>
+            <div class="overview-point">Apply Ambient Occlusion Map</div>
+            <div class="overview-point">Apply Metallic Map</div>
+            <div class="overview-point">Set Albedo of the Material</div>
+            <div class="overview-point">Set Roughness of the Material</div>
+            <div class="overview-point">Set Metalness of the Material</div>
+    </div>
+    <div id="overview-page2-right">
+        <img src="{% static "images/MaterialEditorPanel.png" %}" id="overview-page2-image"></img>
+    </div>
+</div>
+
+<div id="overview-page3">
+    <div id="overview-page3-left">
+        <img src="{% static "images/ContentBrowserPanel.png" %}" id="overview-page3-image"></img>
+    </div>
+    <div id="overview-page3-content">
+        <h1>Content Browser Panel</h1>
+        <p>The Content Browser Panel allows you to:</p>
+        <div class="overview-point">Navigate Assets in the project</div>
+        <div class="overview-point">Create Assets</div>
+        <div class="overview-point">Delete Assets</div>
+        <div class="overview-point">Search Assets</div>
+        <div class="overview-point">Drag and Drop Assets</div>
+        <div class="overview-point">Import Assets</div>
+        <div class="overview-point">Preview Assets (Coming Soon)</div>
+    </div>
+</div>
+{% endblock body %}

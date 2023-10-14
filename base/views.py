@@ -12,6 +12,10 @@ def home(request):
     return render(request, "index.html")
 
 
+def overview(request):
+    return render(request, "overview.html")
+
+
 @sensitive_post_parameters("username", "password")
 def sign_up(request):
     # User shouldn't be allowed to sign-up if already logged in
