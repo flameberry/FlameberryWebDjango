@@ -1,4 +1,4 @@
-<nav id="navbar">
+{% comment %} <nav class="navbar" id="navbar">
     <a href="{%url 'home'%}" style="font-size: 2.4rem; font-weight: 300; font-family: 'Imperial Script'; text-decoration: none; color: white;">Flameberry</a>
     <a href="{% url 'overview' %}" class="nav-links">OVERVIEW</a>
     <a href="https://github.com/flameberry/flameberry-engine/tree/vulkan" target="_blank" class="nav-links">GITHUB</a>
@@ -18,4 +18,42 @@
             <p>&nbsp;{{request.user.username}}</p>
         {% endif %}
     </a>
+</nav> {% endcomment %}
+
+<nav class="navbar navbar-dark navbar-expand-md py-0 navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand align-items-center d-flex" href="{%url 'home'%}" style="font-size: 2.4rem; font-weight: 300; font-family: 'Imperial Script'; text-decoration: none; color: white;">Flameberry</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-around flex-grow-1">
+        <li class="nav-item">
+          <a href="{% url 'overview' %}" class="nav-link" aria-current="page">OVERVIEW</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/flameberry/flameberry-engine/tree/vulkan" target="_blank" class="nav-link">GITHUB</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">LICENSE</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'home' %}#page6" class="nav-link">PRICING</a>
+        </li>
+        <li class="nav-item">
+            <a href="{% url "login" %}" class="nav-link">
+                <svg version="1.2" class="mb-1" width="16px" height="16px" baseProfile="tiny" id="Layer_1" fill="#ffcf53"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 256 256" xml:space="preserve">
+                    <path id="Layer_1_1_"
+                        d="M128.3,48.5c30.4,0,54.3,24.1,54.3,54.3s-24.1,54.3-54.3,54.3S74,133.2,74,103S99.1,48.5,128.3,48.5zM246,248.9v-21.3c0-34.8-25.8-54.3-59.6-54.3H69.6c-34.8,0-59.6,19.5-59.6,54.3v21.3H246z" />
+                </svg>
+                {% if request.user.is_authenticated %}
+                    <p>&nbsp;{{request.user.username}}</p>
+                {% endif %}
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
