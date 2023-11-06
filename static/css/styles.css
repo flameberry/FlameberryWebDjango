@@ -108,26 +108,36 @@ body {
     height: 100%;
 }
 
-#page2 img {
+#page2 img:nth-child(1) {
     position: absolute;
-    object-fit: contain;
-    height: auto;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 #page2 img:nth-child(2) {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    object-fit: contain;
+    width: auto;
     height: auto;
+    max-width: 95%;
+    max-height: 80%;
 }
 
 #page2>p {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -45%);
     position: absolute;
-    font-size: 2rem;
+    bottom: 0;
     text-align: center;
+    width: 95%;
+}
+
+#page2>p>i>span {
+    color: #ffcf53;
+    font-family: 'Imperial Script';
+    font-size: var(--step-3);
 }
 
 #page3 {
