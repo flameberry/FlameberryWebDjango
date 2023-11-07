@@ -33,7 +33,7 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-.navbar-custom.navbar {
+.navbar-custom {
     position: fixed;
     top: 12px;
     width: 90%;
